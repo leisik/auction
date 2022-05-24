@@ -115,7 +115,7 @@ export default function Home() {
               <input type="text" 
                 id="bid" 
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
-                placeholder={(currentPrice + 100).toLocaleString()} 
+                placeholder={(currentPrice==initialPrice)? currentPrice.toLocaleString() : (currentPrice + 100).toLocaleString()} 
                 min={currentPrice*1.1}
                 onChange={(e)=> {checkBid(e.target.value)}}
                 required />
@@ -150,7 +150,7 @@ export default function Home() {
       </div>
       {loading ? <p>Loading...</p> :
         <>
-        <div className='flex flex-col absolute right-10 top-40 flex text-white max-w-[450px]'>
+        <div className='flex flex-col absolute right-10 top-52 flex text-white min-w-[350px] max-w-[450px]'>
           <p className='w-full text-center text-xl mr-2 mb-2'>Bidders</p>
           {bidders.map((bidder) => {
             return (
