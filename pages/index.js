@@ -37,10 +37,7 @@ export default function Home() {
   }
 
   async function bidPrice() {
-    if(yourBid <= currentPrice) {
-      setInformationPageError("Your bid is too low.");
-    }
-    else if(name != null && yourBid != null && email != null) {
+    if (bidders.length == 0 && yourBid == initialPrice) {
       let m_bid = parseInt(yourBid);
       await addDoc(collection(db, 'bidders'), {name: name, bid: m_bid, email: email});
       await updateDoc(doc(db, 'currentPrice', '8gh9ThkX56yy8b9uAqAm'), {current: m_bid});
@@ -49,7 +46,21 @@ export default function Home() {
       setName('')
       setYourBid('');
     }
-    else setInformationPageError("Fill all the inputs.");
+    else {
+      if(yourBid <= currentPrice) {
+        setInformationPageError("Your bid is too low.");
+      }
+      else if(name != null && yourBid != null && email != null) {
+        let m_bid = parseInt(yourBid);
+        await addDoc(collection(db, 'bidders'), {name: name, bid: m_bid, email: email});
+        await updateDoc(doc(db, 'currentPrice', '8gh9ThkX56yy8b9uAqAm'), {current: m_bid});
+        checkHighestBid();
+        setEmail('')
+        setName('')
+        setYourBid('');
+      }
+      else setInformationPageError("Fill all the inputs.");
+    }
   }
 
   function isEmpty(value) {
@@ -69,7 +80,7 @@ export default function Home() {
     }
     else if(result <= currentPrice) {
       console.log("currentPrice: ", currentPrice, "yourBid: ", result);
-      if(currentPrice == initialPrice && result == initialPrice) {
+      if(currentPrice == initialPrice && result == initialPrice && bidders.length == 0) {
         setInformationPageError();
       }
       else setInformationPageError('Bid has to be higher than the current price!')
