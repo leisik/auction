@@ -150,7 +150,7 @@ export default function Home() {
       </div>
       {loading ? <p>Loading...</p> :
         <>
-        <div className='flex flex-col absolute right-10 top-52 flex text-white min-w-[350px] max-w-[450px]'>
+        {/* <div className='flex flex-col absolute right-10 top-52 flex text-white min-w-[350px] max-w-[450px]'>
           <p className='w-full text-center text-xl mr-2 mb-2'>Bidders</p>
           {bidders.map((bidder) => {
             return (
@@ -160,7 +160,7 @@ export default function Home() {
             </div>
             )
           })}
-        </div>
+        </div> */}
         </>
       }
       <div>
