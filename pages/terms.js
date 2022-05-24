@@ -11,32 +11,101 @@ export default function Terms() {
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <header className='w-full'>
+    <header id='top' className='w-full'>
         <Link href="/">
-            <div className="hidden w-60 h-60 sm:block absolute top-4 left-4 cursor-pointer">
+            <div className="hidden w-60 h-60 sm:block absolute top-4 left-4 cursor-pointer hover:opacity-80">
                 <img src="/art1bid.png" alt="Art1Bid Logo" />
             </div>
         </Link>
         <Link href="/">
-            <div className="block sm:hidden w-full flex justify-center items-center cursor-pointer">
+            <div className="block sm:hidden w-full flex justify-center items-center cursor-pointer hover:opacity-80">
                 <img src="/art1bid.png" alt="Art1Bid Logo" className='w-96 my-6'/>
             </div>
         </Link>
     </header>
 
-    <main className="flex-1 flex flex-col justify-center items-center py-4 pb-10 px-0 mt-0 sm:mt-20">
+    <main className="flex-1 flex flex-col justify-center items-center py-4 pb-10 px-0 mt-0 sm:mt-20 scroll-smooth">
+
+      <div className="fixed bottom-5 right-5 z-50">
+        <a href='#top'>
+            <div className='bg-white cursor-pointer hover:opacity-80'>
+                <p className='p-2'>TOP</p>
+            </div>
+        </a>
+      </div>
       <div className="text-3xl font-bold text-white text-center">
         TERMS AND CONDITIONS OF ART ONE BID LTD AUCTIONS 
       </div>
       <div className="text-xl font-bold text-white text-center">
         (<q>Terms and Conditions</q>)
       </div>
+      <div className='w-8/12 text-white'>
+        <h1 className='text-2xl'>Table of contents:</h1>
+        <div>
+            <div className='flex space-x-8 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section1">1.</a>
+                <a href="#section1">ART ONE BID LTD AS COMMISSIONAIRE</a>
+            </div>
+            <div className='flex space-x-8 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section2">2.</a>
+                <a href="#section2">TERMS</a>
+            </div>
+            <div className='flex space-x-8 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section3">3.</a>
+                <a href="#section3">GENERAL CONDITIONS OF BIDDING</a>
+            </div>
+            <div className='flex space-x-8 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section4">4.</a>
+                <a href="#section4">COURSE OF THE AUCTION</a>
+            </div>
+            <div className='flex space-x-8 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section5">5.</a>
+                <a href="#section5">PAYMENT</a>
+            </div>
+            <div className='flex space-x-8 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section6">6.</a>
+                <a href="#section6">THE TRANSFER AND RECEIPT OF AN OBJECT OTHER THAN A TOKEN</a>
+            </div>
+            <div className='flex space-x-8 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section7">7.</a>
+                <a href="#section7">TRANSFER OF A TOKEN</a>
+            </div>
+            <div className='flex space-x-8 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section8">8.</a>
+                <a href="#section8">DECLARATIONS BY THE PURCHASER CONCERNING THE AUCTION OF TOKENS</a>
+            </div>
+            <div className='flex space-x-8 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section9">9.</a>
+                <a href="#section9">RESPONSIBILITY</a>
+            </div>
+            <div className='flex space-x-6 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section10">10.</a>
+                <a href="#section10">WITHDRAWAL FROM THE CONTRACT </a>
+            </div>
+            <div className='flex space-x-6 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section11">11.</a>
+                <a href="#section11">COPYRIGHTS</a>
+            </div>
+            <div className='flex space-x-6 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section12">12.</a>
+                <a href="#section12">PERSONAL DATA</a>
+            </div>
+            <div className='flex space-x-6 w-full cursor-pointer hover:opacity-80'>
+                <a href="#section13">13.</a>
+                <a href="#section13">FINAL PROVISIONS</a>
+            </div>
+            <div className='flex w-full cursor-pointer hover:opacity-80'>
+                <p></p>
+                <a href="#sectionAnnex">Annexes</a>
+            </div>
+        </div>
+      </div>
 
       <div className="flex w-full h-full flex-col items-center mt-4 mb-8 sm:mb-12">
-        <p className='text-white w-8/12 text-justify mb-6'>These Terms and Conditions determine the rules and conditions of participation in the auction and sale of works of art and other collectibles by ART ONE BID LTD with its registered office in London (United Kingdom), a company incorporated under the laws of the United Kingdom, registered at Companies House under number 13490385, Craven House, Ground Floor 40-44 Uxbridge Road, postcode W5 2BS, organised simultaneously in the form of fixed auction organised during the Global Blockchain Convention in Dubai on 24 - 26 May 2022 and by means of the Internet service, in the online formula, i.e. on a specified date with the use of technology enabling mutual communication between ART ONE BID and the Bidder in real time, available at the following website: www.art1bid.com</p>
+        <p className='text-white w-8/12 text-justify mb-6'>These Terms and Conditions determine the rules and conditions of participation in the auction and sale of works of art and other collectibles by ART ONE BID LTD with its registered office in London (United Kingdom), a company incorporated under the laws of the United Kingdom, registered at Companies House under number 13490385, Craven House, Ground Floor 40-44 Uxbridge Road, postcode W5 2BS, organised simultaneously in the form of fixed auction organised during the Global Blockchain Convention in Dubai on 24 - 26 May 2022 and by means of the Internet service, in the online formula, i.e. on a specified date with the use of technology enabling mutual communication between ART ONE BID and the Bidder in real time, available at the following website: <a href='https://art1bid.com'>www.art1bid.com</a></p>
         <div className='space-y-6 w-8/12 text-white text-justify'>
             <div className='space-y-4'>
-                <div className='flex space-x-10'>
+                <div id='section1' className='flex space-x-10'>
                     <h2 className='font-extrabold'>1.</h2>
                     <h2 className='font-extrabold'>ART ONE BID LTD AS COMMISSIONAIRE</h2>
                 </div>
@@ -50,7 +119,7 @@ export default function Terms() {
                 </div>
             </div>
             <div className='space-y-4'>
-                <div className='flex space-x-10'>
+                <div id='section2' className='flex space-x-10'>
                     <h2 className='font-extrabold'>2.</h2>
                     <h2 className='font-extrabold'>TERMS</h2>
                 </div>
@@ -156,7 +225,7 @@ export default function Terms() {
                 </div>
             </div>
             <div className='space-y-4'>
-                <div className='flex space-x-10'>
+                <div id='section3' className='flex space-x-10'>
                     <h2 className='font-extrabold'>3.</h2>
                     <h2 className='font-extrabold'>GENERAL CONDITIONS OF BIDDING</h2>
                 </div>
@@ -265,7 +334,7 @@ export default function Terms() {
                         <p>ART ONE BID refers to the Art1Bid regulations, available at: <a href='https://art1bid.com'>www.art1bid.com</a></p>
                     </div>
                 </div>
-            <div className='space-y-4'>
+            <div id='section4' className='space-y-4'>
                 <div className='flex space-x-10'>
                     <h2 className='font-extrabold'>4.</h2>
                     <h2 className='font-extrabold'>COURSE OF THE AUCTION</h2>
@@ -299,7 +368,7 @@ export default function Terms() {
                     <p>Auction prices are quoted in US dollars and payment should be made in that currency.</p>
                 </div>
             </div>
-            <div className='space-y-4'>
+            <div id='section5' className='space-y-4'>
                 <div className='flex space-x-10'>
                     <h2 className='font-extrabold'>5.</h2>
                     <h2 className='font-extrabold'>PAYMENT</h2>
@@ -357,7 +426,7 @@ export default function Terms() {
                 </div>
                 
             </div>
-            <div className='space-y-4'>
+            <div id='section6' className='space-y-4'>
                 <div className='flex space-x-10'>
                     <h2 className='font-extrabold'>6.</h2>
                     <h2 className='font-extrabold'>THE TRANSFER AND RECEIPT OF AN OBJECT OTHER THAN A TOKEN</h2>
@@ -411,7 +480,7 @@ export default function Terms() {
                 </div>
                 
             </div>
-            <div className='space-y-4'>
+            <div id='section7' className='space-y-4'>
                 <div className='flex space-x-10'>
                     <h2 className='font-extrabold'>7.</h2>
                     <h2 className='font-extrabold'>TRANSFER OF A TOKEN</h2>
@@ -473,7 +542,7 @@ export default function Terms() {
                 </div>
                 
             </div>
-            <div className='space-y-4'>
+            <div id='section8' className='space-y-4'>
                 <div className='flex space-x-10'>
                     <h2 className='font-extrabold'>8.</h2>
                     <h2 className='font-extrabold'>DECLARATIONS BY THE PURCHASER CONCERNING THE AUCTION OF TOKENS</h2>
@@ -506,7 +575,7 @@ export default function Terms() {
                 </div>
                 
             </div>
-            <div className='space-y-4'>
+            <div id='section9' className='space-y-4'>
                 <div className='flex space-x-10'>
                     <h2 className='font-extrabold'>9.</h2>
                     <h2 className='font-extrabold'>RESPONSIBILITY</h2>
@@ -556,7 +625,7 @@ export default function Terms() {
                     <p>All possible complaints are dealt with in accordance with UK law.</p>
                 </div>
             </div>
-            <div className='space-y-4'>
+            <div id='section10' className='space-y-4'>
                 <div className='flex space-x-8'>
                     <h2 className='font-extrabold'>10.</h2>
                     <h2 className='font-extrabold'>WITHDRAWAL FROM THE CONTRACT</h2>
@@ -585,7 +654,7 @@ export default function Terms() {
                     <p>where there is a reasonable suspicion that a transaction would be in breach of law, would circumvent the law or would be contrary to trade rules.</p>
                 </div>
             </div>
-            <div className='space-y-4'>
+            <div id='section11' className='space-y-4'>
                 <div className='flex space-x-8'>
                     <h2 className='font-extrabold'>11.</h2>
                     <h2 className='font-extrabold'>COPYRIGHTS</h2>
@@ -599,7 +668,7 @@ export default function Terms() {
                     <p>The copyright for all photographs, illustrations and texts relating to the object, made by or for ART ONE BID, including the contents of this catalogue, are the property of ART ONE BID. They may not be used by others without the prior written consent of ART ONE BID.</p>
                 </div>
             </div>
-            <div className='space-y-4'>
+            <div id='section12' className='space-y-4'>
                 <div className='flex space-x-8'>
                     <h2 className='font-extrabold'>12.</h2>
                     <h2 className='font-extrabold'>PERSONAL DATA</h2>
@@ -709,7 +778,7 @@ export default function Terms() {
                     <p>The personal data processed comes directly from the auctioneer, as well as from publicly available registers kept and made available on the basis of the law.</p>
                 </div>
             </div>
-            <div className='space-y-4'>
+            <div id='section13' className='space-y-4'>
                 <div className='flex space-x-8'>
                     <h2 className='font-extrabold'>13.</h2>
                     <h2 className='font-extrabold'>FINAL PROVISIONS</h2>
@@ -740,7 +809,7 @@ export default function Terms() {
                 </div>
                 
             </div>
-            <div className='space-y-4'>
+            <div id='sectionAnnex' className='space-y-4'>
                 <div className='flex space-x-8'>
                     <h2>Annex 1</h2>
                 </div>
