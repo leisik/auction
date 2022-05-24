@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { onSnapshot, collection, updateDoc, doc, addDoc } from "firebase/firestore";
 import db from "../src/firebase";
 import Link from 'next/link';
+import NumberFormat from 'react-number-format';
 
 export default function Home() {
   const [currentPrice, setCurrentPrice] = useState(3000000);
@@ -118,7 +119,7 @@ export default function Home() {
           <source src="/painting.mp4" type="video/mp4"/>
           Your browser does not support the video tag.
         </video>  */}
-        <img className="w-1/3 mb-6" src="https://firebasestorage.googleapis.com/v0/b/blockdojo-soundoshi.appspot.com/o/renoir%2Fpobrane.webp?alt=media&token=f2a16c76-ea45-4ef9-9434-b3127bdfcf89" />
+        <img className="w-2/3 lg:w-5/12 2xl:w-1/3 mb-6" src="https://firebasestorage.googleapis.com/v0/b/blockdojo-soundoshi.appspot.com/o/renoir%2Fpobrane.webp?alt=media&token=f2a16c76-ea45-4ef9-9434-b3127bdfcf89" />
         <div className='flex flex-col justify-center items-center text-white text-xl sm:text-2xl mb-2 sm:mb-4'>
           <div className='mr-4 mb-3'>Initial price: {initialPrice.toLocaleString()} USD</div>
           <div className='mr-4 mb-3'>Current price: {currentPrice.toLocaleString()} USD</div>
@@ -126,16 +127,18 @@ export default function Home() {
         </div>
         <div className='block sm:hidden mb-3'>
             <label htmlFor="bidding_price" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your bid</label>
-            <input type="text" 
-              id="bid" 
+            <NumberFormat 
+              thousandSeparator={true} 
+              prefix={'$'} 
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
               placeholder={(currentPrice==initialPrice)? currentPrice.toLocaleString() : (currentPrice + 100).toLocaleString()} 
-              min={currentPrice*1.1}
               onChange={handleChangeBid}
-              required />
-        </div>
+              value={yourBid}
+              required
+            />
+          </div>
         <div className={informationPageError ? 'mb-1.5 flex' : 'mb-6 flex'}>
-          <div className='hidden sm:block' >
+          {/* <div className='hidden sm:block' >
               <label htmlFor="bidding_price" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your bid</label>
               <input type="text" 
                 id="bid" 
@@ -145,6 +148,18 @@ export default function Home() {
                 onChange={handleChangeBid}
                 value={yourBid}
                 required />
+          </div> */}
+          <div className='hidden sm:block'>
+            <label htmlFor="bidding_price" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your bid</label>
+            <NumberFormat 
+              thousandSeparator={true} 
+              prefix={'$'} 
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+              placeholder={(currentPrice==initialPrice)? currentPrice.toLocaleString() : (currentPrice + 100).toLocaleString()} 
+              onChange={handleChangeBid}
+              value={yourBid}
+              required
+            />
           </div>
           <div className='ml-0 sm:ml-4'>
               <label htmlFor="first_name" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
