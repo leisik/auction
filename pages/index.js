@@ -35,19 +35,6 @@ export default function Home() {
     }
   }
 
-  function checkBid(value) {
-    setYourBid(value)
-    if(value === null || value == 0) {
-      setInformationPageError();
-    }
-    else if(value <= currentPrice) {
-      setInformationPageError('Bid has to be higher than the current price!')
-    }
-    else {
-      setInformationPageError();
-    }
-  }
-
   async function bidPrice() {
     if(yourBid <= currentPrice) {
       setInformationPageError("Your bid is too low.");
@@ -70,7 +57,36 @@ export default function Home() {
     }
     else return false
   }
-  const errorInput = isEmpty(name) || isEmpty(yourBid);
+  const errorInput = isEmpty(name) || isEmpty(yourBid) || isEmpty(email);
+
+  const handleChangeBid = event => {
+    const result = event.target.value.replace(/\D/g, '');
+
+    setYourBid(result);
+    if(result === null || result == 0) {
+      setInformationPageError();
+    }
+    else if(result <= currentPrice) {
+      console.log("currentPrice: ", currentPrice, "yourBid: ", result);
+      if(currentPrice == initialPrice && result == initialPrice) {
+        setInformationPageError();
+      }
+      else setInformationPageError('Bid has to be higher than the current price!')
+    }
+    else {
+      setInformationPageError();
+    }
+  };
+
+  const handleChangeName = event => {
+    const result = event.target.value;
+    setName(result);
+  };
+
+  const handleChangeEmail = event => {
+    const result = event.target.value;
+    setEmail(result);
+  };
 
   return (
     <div className="min-h-screen w-full py-0 px-2 flex flex-col justify-center items-center bg-main-right font-mono">
@@ -90,43 +106,54 @@ export default function Home() {
     </header>
 
     <main className="flex-1 flex flex-col justify-center items-center py-4 pb-10 px-0 mt-0 sm:mt-20">
-      <div className="text-3xl font-bold text-white text-center">
+      <div className="text-3xl font-bold text-white text-center mb-2">
         PIERRE-AUGUSTE RENOIR
       </div>
       <div className="text-xl font-bold text-white text-center">
         Marie Dupuis tenant un miroir avec un portrait de Coco or Gabrielle tenant un miroir avec un portrait de Coco
       </div>
 
-      <div className="flex w-full h-full flex-col items-center mt-4 mb-8 sm:mb-12">
-        <video  className="w-11/12 sm:w-640px h-3/6 sm:h-425px bg-cover bg-center rounded-xl mb-4" autoPlay="autoplay" loop={true} muted>
+      <div className="flex w-full h-full flex-col items-center mt-6 mb-8 sm:mb-12">
+        {/* <video  className="w-11/12 sm:w-640px h-3/6 sm:h-425px bg-cover bg-center rounded-xl mb-4" autoPlay="autoplay" loop={true} muted>
           <source src="/painting.mp4" type="video/mp4"/>
           Your browser does not support the video tag.
-        </video> 
+        </video>  */}
+        <img className="w-1/3 mb-6" src="https://firebasestorage.googleapis.com/v0/b/blockdojo-soundoshi.appspot.com/o/renoir%2Fpobrane.webp?alt=media&token=f2a16c76-ea45-4ef9-9434-b3127bdfcf89" />
         <div className='flex flex-col justify-center items-center text-white text-xl sm:text-2xl mb-2 sm:mb-4'>
           <div className='mr-4 mb-3'>Initial price: {initialPrice.toLocaleString()} USD</div>
-          {/* <div className='text-sm'>●</div>
-          <div className='ml-4'>{Object.keys(bidders).length} bidders</div> */}
           <div className='mr-4 mb-3'>Current price: {currentPrice.toLocaleString()} USD</div>
           <div className='ml-4 mb-3'>{loading ? '0' : bidders.length} bidder(s)</div>
         </div>
+        <div className='block sm:hidden mb-3'>
+            <label htmlFor="bidding_price" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your bid</label>
+            <input type="text" 
+              id="bid" 
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+              placeholder={(currentPrice==initialPrice)? currentPrice.toLocaleString() : (currentPrice + 100).toLocaleString()} 
+              min={currentPrice*1.1}
+              onChange={handleChangeBid}
+              required />
+        </div>
         <div className={informationPageError ? 'mb-1.5 flex' : 'mb-6 flex'}>
-          <div >
+          <div className='hidden sm:block' >
               <label htmlFor="bidding_price" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your bid</label>
               <input type="text" 
                 id="bid" 
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                 placeholder={(currentPrice==initialPrice)? currentPrice.toLocaleString() : (currentPrice + 100).toLocaleString()} 
                 min={currentPrice*1.1}
-                onChange={(e)=> {checkBid(e.target.value)}}
+                onChange={handleChangeBid}
+                value={yourBid}
                 required />
           </div>
-          <div className='ml-4'>
+          <div className='ml-0 sm:ml-4'>
               <label htmlFor="first_name" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
               <input type="text" 
                 id="first_name" 
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                 placeholder="name" 
-                onChange={(e)=>{setName(e.target.value)}}
+                onChange={handleChangeName}
+                value={name}
                 required />
           </div>
           <div className='ml-4'>
@@ -136,7 +163,8 @@ export default function Home() {
                 id="email" 
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
                 placeholder="email" 
-                onChange={(e)=>{setEmail(e.target.value)}}
+                onChange={handleChangeEmail}
+                value={email}
                 required />
           </div>
         </div>
@@ -144,29 +172,30 @@ export default function Home() {
         <button 
           onClick={()=>{bidPrice()}} 
           disabled={errorInput}
-          className='flex justify-center items-center border border-white text-white w-40 h-12 text-2xl rounded-lg mt-6 sm:mt-0 mt-6 cursor-pointer hover:border-button-hover hover:text-button-hover disabled:border-[#999] disabled:text-[#999] disabled:cursor-default'>
+          className='flex justify-center items-center border border-white text-white w-40 h-12 text-2xl rounded-lg mt-6 sm:mt-0 cursor-pointer hover:border-button-hover hover:text-button-hover disabled:border-[#999] disabled:text-[#999] disabled:cursor-default'>
             Place bid
         </button>
       </div>
-      {loading ? <p>Loading...</p> :
+      {/* {loading ? <p>Loading...</p> :
         <>
-        {/* <div className='flex flex-col absolute right-10 top-52 flex text-white min-w-[350px] max-w-[450px]'>
+        <div className='flex flex-col flex text-white text-sm sm:text-base w-full sm:w-9/12 xl:w-[400px] max-w-[550px] mb-6'>
           <p className='w-full text-center text-xl mr-2 mb-2'>Bidders</p>
           {bidders.map((bidder) => {
             return (
             <div key={bidder.id} className='w-auto flex text-white bg-[#4F4E5D] rounded-lg px-4 py-2 mt-1'>
-              <p className='mr-2'>{bidder.name}({bidder.email})</p>
-              <p className='mr-2'>{bidder.bid.toLocaleString()} USD</p>
+              <p className='mr-8'>{bidder.name} ({bidder.email})</p>
+              <div className='mx-auto'></div>
+              <p className=''>{bidder.bid.toLocaleString()} USD</p>
             </div>
             )
           })}
-        </div> */}
+        </div>
         </>
-      }
+      } */}
       <div>
         <Link href='/terms'>
           <button 
-            className='flex justify-center items-center border border-white text-white px-4 py-2 text-2xl rounded-lg mt-6 sm:mt-0 mt-6 cursor-pointer hover:border-button-hover hover:text-button-hover'>
+            className='flex justify-center items-center border border-white text-white px-4 py-2 text-2xl rounded-lg mt-6 sm:mt-0 cursor-pointer hover:border-button-hover hover:text-button-hover'>
               Terms and Conditions
           </button>
         </Link>
