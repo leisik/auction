@@ -57,7 +57,7 @@ export default function Home() {
   }
 
   const kupa = isEmpty(name) || isEmpty(yourBid);
-  console.log("BIDDERS", Object.keys(bidders).length)
+  // console.log("BIDDERS", Object.keys(bidders).length)
   console.log("kupa", kupa)
   
   return (
@@ -86,14 +86,14 @@ export default function Home() {
       </div>
 
       <div className="flex w-full h-full flex-col items-center mt-4 mb-8 sm:mb-12">
-        <video  className="w-11/12 sm:w-640px h-3/6 sm:h-425px bg-cover bg-center rounded-xl mb-4" autoplay="autoplay" loop="true" muted>
+        <video  className="w-11/12 sm:w-640px h-3/6 sm:h-425px bg-cover bg-center rounded-xl mb-4" autoPlay="autoplay" loop="true" muted>
           <source src="/painting.mp4" type="video/mp4"/>
           Your browser does not support the video tag.
         </video> 
         <div className='flex justify-center items-center text-white text-xl sm:text-2xl mb-2 sm:mb-4'>
           <div className='mr-4'>Initial price: {currentPrice.toLocaleString()} USD</div>
-          <div className='text-sm'>●</div>
-          <div className='ml-4'>{Object.keys(bidders).length} bidders</div>
+          {/* <div className='text-sm'>●</div>
+          <div className='ml-4'>{Object.keys(bidders).length} bidders</div> */}
         </div>
         <div className={informationPageError ? 'mb-1.5 flex' : 'mb-6 flex'}>
           <div >

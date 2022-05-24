@@ -29,7 +29,7 @@ export default function Terms() {
         TERMS AND CONDITIONS OF ART ONE BID LTD AUCTIONS 
       </div>
       <div className="text-xl font-bold text-white text-center">
-        ("Terms and Conditions")
+        (<q>Terms and Conditions</q>)
       </div>
 
       <div className="flex w-full h-full flex-col items-center mt-4 mb-8 sm:mb-12">
@@ -56,103 +56,103 @@ export default function Terms() {
                 </div>
                 <div className='flex space-x-6'>
                     <p>2.1.</p>
-                    <p><span className='font-extrabold'>"ART ONE BID" or "Consignee"</span> - with its registered office in London, United Kingdom, a company incorporated under the laws of the United Kingdom and registered at Companies House under registration number 13490385, Craven House, Ground Floor 40-44 Uxbridge Road, postcode W5 2BS.</p>
+                    <p><span className='font-extrabold'><q>ART ONE BID</q> or <q>Consignee</q></span> - with its registered office in London, United Kingdom, a company incorporated under the laws of the United Kingdom and registered at Companies House under registration number 13490385, Craven House, Ground Floor 40-44 Uxbridge Road, postcode W5 2BS.</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>2.2.</p>
-                    <p><span className='font-extrabold'>"Auction"</span> or <span className='font-extrabold'>"Bidding"</span> - an organised form of sale or purchase of objects, consisting of the submission to ART ONE BID, under the terms and conditions set out in the Regulations, of competing bids for the purchase of individual objects by the bidders, in which the highest bidder becomes the purchaser.</p>
+                    <p><span className='font-extrabold'><q>Auction</q></span> or <span className='font-extrabold'><q>Bidding</q></span> - an organised form of sale or purchase of objects, consisting of the submission to ART ONE BID, under the terms and conditions set out in the Regulations, of competing bids for the purchase of individual objects by the bidders, in which the highest bidder becomes the purchaser.</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>2.3.</p>
-                    <p><span className='font-extrabold'>"Online auction"</span> or <span className='font-extrabold'>"Online bidding"</span> - an auction held via the Internet service in the form of online transmission during which bidders have the opportunity to place bids in parallel with bidders participating in the fixed auction, i.e. within a specified period with the use of technology enabling mutual communication between ART ONE BID and the bidder in real time, available at: www. art1bid.com; the online auction takes place simultaneously with the stationary auction and constitutes an alternative form of participation in the stationary auction.</p>
+                    <p><span className='font-extrabold'><q>Online auction</q></span> or <span className='font-extrabold'><q>Online bidding</q></span> - an auction held via the Internet service in the form of online transmission during which bidders have the opportunity to place bids in parallel with bidders participating in the fixed auction, i.e. within a specified period with the use of technology enabling mutual communication between ART ONE BID and the bidder in real time, available at: www. art1bid.com; the online auction takes place simultaneously with the stationary auction and constitutes an alternative form of participation in the stationary auction.</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>2.4.</p>
-                    <p><span className='font-extrabold'>"Stationary auction"</span> or <span className='font-extrabold'>"Stationary bidding"</span> - an auction held in a stationary format in Dubai during the Global Blockchain Convention.</p>
+                    <p><span className='font-extrabold'><q>Stationary auction</q></span> or <span className='font-extrabold'><q>Stationary bidding</q></span> - an auction held in a stationary format in Dubai during the Global Blockchain Convention.</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>2.5.</p>
-                    <p><span className='font-extrabold'>"Auctioneer"</span> - the person appointed by ART ONE BID to conduct the auction.</p>
+                    <p><span className='font-extrabold'><q>Auctioneer</q></span> - the person appointed by ART ONE BID to conduct the auction.</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>2.6.</p>
-                    <p><span className='font-extrabold'>"Reserve price"</span> - the lowest amount for which an object can be sold without the additional consent of the consigner. The minimum price may not exceed the lower estimation limit. Unless otherwise stated, each object is offered subject to a minimum price.</p>
+                    <p><span className='font-extrabold'><q>Reserve price</q></span> - the lowest amount for which an object can be sold without the additional consent of the consigner. The minimum price may not exceed the lower estimation limit. Unless otherwise stated, each object is offered subject to a minimum price.</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>2.7.</p>
-                    <p><span className='font-extrabold'>"Purchase price"</span> - the final price the buyer is obliged to pay for the object. It consists of the hammer price, the Commission, taxes and additional charges. </p>
+                    <p><span className='font-extrabold'><q>Purchase price</q></span> - the final price the buyer is obliged to pay for the object. It consists of the hammer price, the Commission, taxes and additional charges. </p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>2.8.</p>
-                    <p><span className='font-extrabold'>"Hammer price"</span> - the final amount bid for an object during an auction. It is confirmed by the auctioneer striking the gavel, which is tantamount to concluding a sales contract. The auction fee, taxes and additional charges will be added to the auction price.</p>
+                    <p><span className='font-extrabold'><q>Hammer price</q></span> - the final amount bid for an object during an auction. It is confirmed by the auctioneer striking the gavel, which is tantamount to concluding a sales contract. The auction fee, taxes and additional charges will be added to the auction price.</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>2.9.</p>
-                    <p><span className='font-extrabold'>"Starting price"</span> - the price set by the auctioneer at which bidding begins. It is customary for the starting price to be between 1/2 and 3/4 of the lower estimation limit. The starting price may be specified in the catalogue.</p>
+                    <p><span className='font-extrabold'><q>Starting price</q></span> - the price set by the auctioneer at which bidding begins. It is customary for the starting price to be between 1/2 and 3/4 of the lower estimation limit. The starting price may be specified in the catalogue.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.10.</p>
-                    <p><span className='font-extrabold'>"Digital work"</span> - a digital reproduction of an artist's work, associated with an individually designated Token and identified by that Token; </p>
+                    <p><span className='font-extrabold'><q>Digital work</q></span> - a digital reproduction of an artist`s work, associated with an individually designated Token and identified by that Token; </p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.11.</p>
-                    <p><span className='font-extrabold'>"Estimate"</span> - An estimate of the value an object may achieve at auction. It does not take into account auction fees and incidental charges or taxes. Estimate prices are available in the PDF version of the auction catalogue and in the printed catalogue. Estimates in the auction catalogue may be quoted in euros or US dollars. The exchange rate on the day of the auction may differ from that on the day the catalogue is printed.</p>
+                    <p><span className='font-extrabold'><q>Estimate</q></span> - An estimate of the value an object may achieve at auction. It does not take into account auction fees and incidental charges or taxes. Estimate prices are available in the PDF version of the auction catalogue and in the printed catalogue. Estimates in the auction catalogue may be quoted in euros or US dollars. The exchange rate on the day of the auction may differ from that on the day the catalogue is printed.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.12.</p>
-                    <p><span className='font-extrabold'>"Consignor"</span> -  the person who presents an object for sale and who is entitled to dispose of the object.</p>
+                    <p><span className='font-extrabold'><q>Consignor</q></span> -  the person who presents an object for sale and who is entitled to dispose of the object.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.13.</p>
-                    <p><span className='font-extrabold'>"Licence"</span> - the right granted to the purchaser to use the digital work associated with a token.</p>
+                    <p><span className='font-extrabold'><q>Licence</q></span> - the right granted to the purchaser to use the digital work associated with a token.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.14.</p>
-                    <p><span className='font-extrabold'>"Bidder"</span> - a person who has successfully passed the registration and verification process carried out by ART ONE BID and as a result has been given the opportunity to actively participate in the auction.</p>
+                    <p><span className='font-extrabold'><q>Bidder</q></span> - a person who has successfully passed the registration and verification process carried out by ART ONE BID and as a result has been given the opportunity to actively participate in the auction.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.15.</p>
-                    <p><span className='font-extrabold'>"Purchaser"</span> - a person (auctioneer) who, as a result of an auction, conditional sale or non-auction sale conducted by ART ONE BID, has concluded a sales contract.</p>
+                    <p><span className='font-extrabold'><q>Purchaser</q></span> - a person (auctioneer) who, as a result of an auction, conditional sale or non-auction sale conducted by ART ONE BID, has concluded a sales contract.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.16.</p>
-                    <p><span className='font-extrabold'>"Lot"</span> - a work of art or other collectible object, including a Token, which may be sold by auction or non-auction sale.</p>
+                    <p><span className='font-extrabold'><q>Lot</q></span> - a work of art or other collectible object, including a Token, which may be sold by auction or non-auction sale.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.17.</p>
-                    <p><span className='font-extrabold'>"Commission"</span> - ART ONE BID's additional remuneration for handling the sale transaction, amounting to 3% of the final hammer price.</p>
+                    <p><span className='font-extrabold'><q>Commission</q></span> - ART ONE BID`s additional remuneration for handling the sale transaction, amounting to 3% of the final hammer price.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.18.</p>
-                    <p><span className='font-extrabold'>"Wallet"</span> - a browser wallet specifically designed to handle Tokens, allowing them to be sent and received.</p>
+                    <p><span className='font-extrabold'><q>Wallet</q></span> - a browser wallet specifically designed to handle Tokens, allowing them to be sent and received.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.19.</p>
-                    <p><span className='font-extrabold'>"Raise"</span> - an offer made by an auctioneer to purchase an object which is higher than the highest bid at a given moment by a bid increment. </p>
+                    <p><span className='font-extrabold'><q>Raise</q></span> - an offer made by an auctioneer to purchase an object which is higher than the highest bid at a given moment by a bid increment. </p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.20.</p>
-                    <p><span className='font-extrabold'>"Art1Bid regulations"</span> - regulations specifying the rules and technical requirements for the use of the website, the rules for the conclusion and termination of the agreement, intellectual property rights and the complaint procedure; the regulations are available at the following web address: <a href='https://art1bid.com'>https://art1bid.com</a></p>
+                    <p><span className='font-extrabold'><q>Art1Bid regulations</q></span> - regulations specifying the rules and technical requirements for the use of the website, the rules for the conclusion and termination of the agreement, intellectual property rights and the complaint procedure; the regulations are available at the following web address: <a href='https://art1bid.com'>https://art1bid.com</a></p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.21.</p>
-                    <p><span className='font-extrabold'>"Internet service"</span> - the internet service enabling the bidders to participate online in the auction, available at the following website address: <a href='https://art1bid.com'>www.art1bid.com;</a> where these Rules refers to an Internet service, it shall also mean a mobile application installed on the Bidder's mobile device, offered by the service provider <a href='https://art1bid.com'>www.art1bid.com</a> for mobile operating systems, which is part of the Internet service; </p>
+                    <p><span className='font-extrabold'><q>Internet service</q></span> - the internet service enabling the bidders to participate online in the auction, available at the following website address: <a href='https://art1bid.com'>www.art1bid.com;</a> where these Rules refers to an Internet service, it shall also mean a mobile application installed on the Bidder`s mobile device, offered by the service provider <a href='https://art1bid.com'>www.art1bid.com</a> for mobile operating systems, which is part of the Internet service; </p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.22.</p>
-                    <p><span className='font-extrabold'>"Conditional sale"</span> - a conditional sale contract is concluded when the bid price has not reached the reserve price. The transaction comes into effect if the consignor agrees to sell the object at a price lower than the minimum price or the auctioneer increases his bid to the minimum price. Otherwise the conditional sale does not take place and the object may be put up for a post auction sale.</p>
+                    <p><span className='font-extrabold'><q>Conditional sale</q></span> - a conditional sale contract is concluded when the bid price has not reached the reserve price. The transaction comes into effect if the consignor agrees to sell the object at a price lower than the minimum price or the auctioneer increases his bid to the minimum price. Otherwise the conditional sale does not take place and the object may be put up for a post auction sale.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.23.</p>
-                    <p><span className='font-extrabold'>"Token"</span> or <span className='font-extrabold'>"NFT Token"</span> - a data unit stored in a blockchain registry, in accordance with the Elas Digital standard (or equivalent standard), which contains information about the name of the digital work, a description of the digital work, the location where it is stored, as well as other data, if required by contracts or law, which determines the extent of the Token owner's right to use the digital work associated with the Token.</p>
+                    <p><span className='font-extrabold'><q>Token</q></span> or <span className='font-extrabold'><q>NFT Token</q></span> - a data unit stored in a blockchain registry, in accordance with the Elas Digital standard (or equivalent standard), which contains information about the name of the digital work, a description of the digital work, the location where it is stored, as well as other data, if required by contracts or law, which determines the extent of the Token owner`s right to use the digital work associated with the Token.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.24.</p>
-                    <p><span className='font-extrabold'>"Sales contract"</span> - a contract concluded in the course of an auction between a seller, in which ART ONE BID acts as consignee, and a purchaser (bidder), the object of which is the sale of an object against payment of the purchase price for that object.</p>
+                    <p><span className='font-extrabold'><q>Sales contract</q></span> - a contract concluded in the course of an auction between a seller, in which ART ONE BID acts as consignee, and a purchaser (bidder), the object of which is the sale of an object against payment of the purchase price for that object.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>2.25.</p>
-                    <p><span className='font-extrabold'>"Work"</span> - an original work within the meaning of the Copyright and Related Rights Act by an artist which forms the basis for a digital work.</p>
+                    <p><span className='font-extrabold'><q>Work</q></span> - an original work within the meaning of the Copyright and Related Rights Act by an artist which forms the basis for a digital work.</p>
                 </div>
             </div>
             <div className='space-y-4'>
@@ -349,11 +349,11 @@ export default function Terms() {
                 </div>
                 <div className='flex space-x-6'>
                     <p>5.8.</p>
-                    <p>If, by the date of recording sales on the cash register (on the date of issuing the fiscal receipt), the bidder is unsure whether he/she wishes to receive a markup VAT invoice, he/she should provide the cashier with the number by which he is identified for tax or value added tax purposes (NIP), in order to include this number on the fiscal receipt. ART ONE BID stipulates that it will not issue an invoice for the receipt, which will not include the purchaser's NIP number, despite the request to do so within the statutory period.</p>
+                    <p>If, by the date of recording sales on the cash register (on the date of issuing the fiscal receipt), the bidder is unsure whether he/she wishes to receive a markup VAT invoice, he/she should provide the cashier with the number by which he is identified for tax or value added tax purposes (NIP), in order to include this number on the fiscal receipt. ART ONE BID stipulates that it will not issue an invoice for the receipt, which will not include the purchaser`s NIP number, despite the request to do so within the statutory period.</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>5.9.</p>
-                    <p>ART ONE BID stipulates that in connection with participation in the online auction, the bidders shall not incur any additional costs for ART ONE BID. In this case, however, they may be required to pay fees resulting from the provision of such a service by the online service to Art1Bid. Detailed regulations in this matter are specified in Art1Bid's terms and conditions accordingly.</p>
+                    <p>ART ONE BID stipulates that in connection with participation in the online auction, the bidders shall not incur any additional costs for ART ONE BID. In this case, however, they may be required to pay fees resulting from the provision of such a service by the online service to Art1Bid. Detailed regulations in this matter are specified in Art1Bid`s terms and conditions accordingly.</p>
                 </div>
                 
             </div>
@@ -391,7 +391,7 @@ export default function Terms() {
                 </div>
                 <div className='flex space-x-6'>
                     <p>6.7.</p>
-                    <p>ART ONE BID provides, free of charge, basic packaging of the object to enable its personal collection. At the auctioneer's request, ART ONE BID can assist in contacting a specialised company for the packaging and shipping of objects. Such an order is carried out at the responsibility of the auctioneer, whereby ART ONE BID does not assume any responsibility for incorrect execution of services by carriers or other third parties.</p>
+                    <p>ART ONE BID provides, free of charge, basic packaging of the object to enable its personal collection. At the auctioneer`s request, ART ONE BID can assist in contacting a specialised company for the packaging and shipping of objects. Such an order is carried out at the responsibility of the auctioneer, whereby ART ONE BID does not assume any responsibility for incorrect execution of services by carriers or other third parties.</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>6.8.</p>
@@ -445,7 +445,7 @@ export default function Terms() {
                 <div className='flex space-x-3'>
                     <p className='ml-16'></p>
                     <p>d)</p>
-                    <p>The token will be correctly linked to the buyer's bidding wallet;</p>
+                    <p>The token will be correctly linked to the buyer`s bidding wallet;</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>7.3.</p>
@@ -457,7 +457,7 @@ export default function Terms() {
                 </div>
                 <div className='flex space-x-6'>
                     <p>7.5.</p>
-                    <p>Risk and liability for the Token are transferred to the purchaser when the Token is transferred to the purchaser's wallet.</p>
+                    <p>Risk and liability for the Token are transferred to the purchaser when the Token is transferred to the purchaser`s wallet.</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>7.6.</p>
@@ -490,7 +490,7 @@ export default function Terms() {
                 <div className='flex space-x-3'>
                     <p className='ml-16'></p>
                     <p>b)</p>
-                    <p>an individual or person employed by or associated with an entity that appears on the U.S. Department of Commerce's Denied Persons or Entity List, the U.S. Department of Treasury's Specially Designated Nationals or Blocked Persons List or the U.S. Department of State's Debarred Parties List or similar lists published by European Union, United Kingdom or United Nations authorities.</p>
+                    <p>an individual or person employed by or associated with an entity that appears on the U.S. Department of Commerce`s Denied Persons or Entity List, the U.S. Department of Treasury`s Specially Designated Nationals or Blocked Persons List or the U.S. Department of State`s Debarred Parties List or similar lists published by European Union, United Kingdom or United Nations authorities.</p>
                 </div>
                 <div className='flex space-x-6'>
                     <p>8.2.</p>
@@ -606,15 +606,15 @@ export default function Terms() {
                 </div>
                 <div className='flex space-x-4'>
                     <p>12.1.</p>
-                    <p>The opportunity to participate in auctions conducted by ART ONE BID entails the processing of the bidder's personal data. ART ONE BID will process the entrusted personal data on its own behalf as controller within the meaning of Regulation (EU) 2016/679 of the European Parliament and of the Council (GDPR).</p>
+                    <p>The opportunity to participate in auctions conducted by ART ONE BID entails the processing of the bidder`s personal data. ART ONE BID will process the entrusted personal data on its own behalf as controller within the meaning of Regulation (EU) 2016/679 of the European Parliament and of the Council (GDPR).</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>12.2.</p>
-                    <p>ART ONE BID will process your personal data to the extent necessary to enable you to take part in the auction and to conclude the sales contract by means of the auction, including in particular the extent specified in the order form or made available to ART ONE BID by online auction platforms, including in particular the name, surname, email address, number and series of the bidder's identity card and the bidder's bank account number (in the case of conclusion of the sales contract).</p>
+                    <p>ART ONE BID will process your personal data to the extent necessary to enable you to take part in the auction and to conclude the sales contract by means of the auction, including in particular the extent specified in the order form or made available to ART ONE BID by online auction platforms, including in particular the name, surname, email address, number and series of the bidder`s identity card and the bidder`s bank account number (in the case of conclusion of the sales contract).</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>12.3.</p>
-                    <p>ART ONE BID will process the bidder's personal data for the purpose of:</p>
+                    <p>ART ONE BID will process the bidder`s personal data for the purpose of:</p>
                 </div>
                 <div className='flex space-x-3'>
                     <p className='ml-16'></p>
@@ -698,7 +698,7 @@ export default function Terms() {
                 </div>
                 <div className='flex space-x-4'>
                     <p>12.9.</p>
-                    <p>The exercise of the rights referred to above can be done by indicating your requests to the e-mail address: [info@art1bid.com] or in writing to ART ONE BID's registered office address.</p>
+                    <p>The exercise of the rights referred to above can be done by indicating your requests to the e-mail address: [info@art1bid.com] or in writing to ART ONE BID`s registered office address.</p>
                 </div>
                 <div className='flex space-x-2'>
                     <p>12.10.</p>
@@ -732,7 +732,7 @@ export default function Terms() {
                 </div>
                 <div className='flex space-x-4'>
                     <p>13.5.</p>
-                    <p>The terms and conditions may be amended by ART ONE BID through addenda available on ART ONE BID's website or by communicating the amended terms and conditions, together with their new wording, electronically using the form of communication communicated to ART ONE BID as preferred.</p>
+                    <p>The terms and conditions may be amended by ART ONE BID through addenda available on ART ONE BID`s website or by communicating the amended terms and conditions, together with their new wording, electronically using the form of communication communicated to ART ONE BID as preferred.</p>
                 </div>
                 <div className='flex space-x-4'>
                     <p>13.6.</p>
