@@ -6,13 +6,13 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBEHti1tna1hl7hTZw1NADEBb_Zg7REVWk",
-  authDomain: "pray-for-ukraine.firebaseapp.com",
-  projectId: "pray-for-ukraine",
-  storageBucket: "pray-for-ukraine.appspot.com",
-  messagingSenderId: "893102549817",
-  appId: "1:893102549817:web:3c87f716af342fc7b1d6e8",
-  measurementId: "G-13K6WZ93PK"
+  apiKey: "AIzaSyDZ3lZiOBBqLVlptbBAz7fBxRjKfuHwTv8",
+  authDomain: "blockdojo-soundoshi.firebaseapp.com",
+  projectId: "blockdojo-soundoshi",
+  storageBucket: "blockdojo-soundoshi.appspot.com",
+  messagingSenderId: "168447870329",
+  appId: "1:168447870329:web:c4bfc3508819cd42a15ba8",
+  measurementId: "G-HYZW5FXQL8"
 };
 
 // Initialize Firebase
