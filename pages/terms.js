@@ -39,8 +39,8 @@ export default function Terms() {
       <div className="text-xl font-bold text-white text-center">
         (<q>Terms and Conditions</q>)
       </div>
-      <div className='w-8/12 text-white'>
-        <h1 className='text-2xl'>Table of contents:</h1>
+      <div className='w-11/12 lg:w-8/12 text-white mb-5'>
+        <h1 className='text-2xl mt-5'>Table of contents:</h1>
         <div>
             <div className='flex space-x-8 w-full cursor-pointer hover:opacity-80'>
                 <a href="#section1">1.</a>
@@ -102,8 +102,8 @@ export default function Terms() {
       </div>
 
       <div className="flex w-full h-full flex-col items-center mt-4 mb-8 sm:mb-12">
-        <p className='text-white w-8/12 text-justify mb-6'>These Terms and Conditions determine the rules and conditions of participation in the auction and sale of works of art and other collectibles by ART ONE BID LTD with its registered office in London (United Kingdom), a company incorporated under the laws of the United Kingdom, registered at Companies House under number 13490385, Craven House, Ground Floor 40-44 Uxbridge Road, postcode W5 2BS, organised simultaneously in the form of fixed auction organised during the Global Blockchain Convention in Dubai on 24 - 26 May 2022 and by means of the Internet service, in the online formula, i.e. on a specified date with the use of technology enabling mutual communication between ART ONE BID and the Bidder in real time, available at the following website: <a href='https://art1bid.com'>www.art1bid.com</a></p>
-        <div className='space-y-6 w-8/12 text-white text-justify'>
+        <p className='text-white w-11/12 lg:w-8/12 text-justify mb-6'>These Terms and Conditions determine the rules and conditions of participation in the auction and sale of works of art and other collectibles by ART ONE BID LTD with its registered office in London (United Kingdom), a company incorporated under the laws of the United Kingdom, registered at Companies House under number 13490385, Craven House, Ground Floor 40-44 Uxbridge Road, postcode W5 2BS, organised simultaneously in the form of fixed auction organised during the Global Blockchain Convention in Dubai on 24 - 26 May 2022 and by means of the Internet service, in the online formula, i.e. on a specified date with the use of technology enabling mutual communication between ART ONE BID and the Bidder in real time, available at the following website: <a href='https://art1bid.com'>www.art1bid.com</a></p>
+        <div className='space-y-6 w-11/12 lg:w-8/12 text-white text-justify'>
             <div className='space-y-4'>
                 <div id='section1' className='flex space-x-10'>
                     <h2 className='font-extrabold'>1.</h2>

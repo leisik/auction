@@ -133,10 +133,10 @@ export default function Home() {
         <img className="w-2/3 lg:w-5/12 2xl:w-1/3 mb-6" src="https://firebasestorage.googleapis.com/v0/b/blockdojo-soundoshi.appspot.com/o/renoir%2Fpobrane.webp?alt=media&token=f2a16c76-ea45-4ef9-9434-b3127bdfcf89" />
         <div className='flex flex-col justify-center items-center text-white text-xl sm:text-2xl mb-2 sm:mb-4'>
           <div className='mr-4 mb-3'>Initial price: {initialPrice.toLocaleString()} USD</div>
-          <div className='mr-4 mb-3'>Current price: {currentPrice.toLocaleString()} USD</div>
+          {/* <div className='mr-4 mb-3'>Current price: {currentPrice.toLocaleString()} USD</div> */}
           <div className='ml-4 mb-3'>{loading ? '0' : bidders.length} bidder(s)</div>
         </div>
-        <div className='block sm:hidden mb-3'>
+        {/* <div className='block sm:hidden mb-3'>
             <label htmlFor="bidding_price" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your bid</label>
             <NumberFormat 
               thousandSeparator={true} 
@@ -147,7 +147,7 @@ export default function Home() {
               value={yourBid}
               required
             />
-          </div>
+          </div> */}
         <div className={informationPageError ? 'mb-1.5 flex' : 'mb-6 flex'}>
           {/* <div className='hidden sm:block' >
               <label htmlFor="bidding_price" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your bid</label>
@@ -160,7 +160,7 @@ export default function Home() {
                 value={yourBid}
                 required />
           </div> */}
-          <div className='hidden sm:block'>
+          {/* <div className='hidden sm:block'>
             <label htmlFor="bidding_price" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your bid</label>
             <NumberFormat 
               thousandSeparator={true} 
@@ -171,7 +171,7 @@ export default function Home() {
               value={yourBid}
               required
             />
-          </div>
+          </div> */}
           <div className='ml-0 sm:ml-4'>
               <label htmlFor="first_name" className="block mb-1 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
               <input type="text" 
@@ -198,8 +198,8 @@ export default function Home() {
         <button 
           onClick={()=>{bidPrice()}} 
           disabled={errorInput}
-          className='flex justify-center items-center border border-white text-white w-40 h-12 text-2xl rounded-lg mt-6 sm:mt-0 cursor-pointer hover:border-button-hover hover:text-button-hover disabled:border-[#999] disabled:text-[#999] disabled:cursor-default'>
-            Place bid
+          className='flex justify-center items-center border border-white text-white w-9/12 md:w-56 h-12 text-xl rounded-lg mt-6 sm:mt-0 cursor-pointer hover:border-button-hover hover:text-button-hover disabled:border-[#999] disabled:text-[#999] disabled:cursor-default'>
+            Submit interest
         </button>
       </div>
       {/* {loading ? <p>Loading...</p> :
