@@ -63,13 +63,24 @@ export default function Home() {
     }
   }
 
+  async function saveData() {
+    if(name != null && email != null) {
+      let m_bid = parseInt(yourBid);
+      await addDoc(collection(db, 'bidders'), {name: name, bid: m_bid, email: email});
+      setEmail('')
+      setName('')
+      setYourBid('');
+    }
+    else setInformationPageError("Fill all the inputs.");
+  }
+
   function isEmpty(value) {
     if(value == null || value == "") {
       return true
     }
     else return false
   }
-  const errorInput = isEmpty(name) || isEmpty(yourBid) || isEmpty(email);
+  const errorInput = isEmpty(name) || isEmpty(email);
 
   const handleChangeBid = event => {
     const result = event.target.value.replace(/\D/g, '');
@@ -196,7 +207,7 @@ export default function Home() {
         </div>
         {informationPageError && <p className="text-red-500 text-center text-sm mb-6">{informationPageError}</p>}
         <button 
-          onClick={()=>{bidPrice()}} 
+          onClick={()=>{saveData()}} 
           disabled={errorInput}
           className='flex justify-center items-center border border-white text-white w-9/12 md:w-56 h-12 text-xl rounded-lg mt-6 sm:mt-0 cursor-pointer hover:border-button-hover hover:text-button-hover disabled:border-[#999] disabled:text-[#999] disabled:cursor-default'>
             Submit interest
